@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Growth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@700&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lora', serif;
+            background-color: #c1b7a4;
+            background-image: url('https://www.transparenttextures.com/patterns/old-paper.png');
+        }
+        .newspaper-container {
+            width: 100%;
+            max-width: 420px;
+            height: 750px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            overflow-y: auto;
+            background-color: #f3eadc;
+            display: flex;
+            flex-direction: column;
+        }
+        .masthead-title {
+            font-family: 'UnifrakturCook', cursive;
+            font-weight: 700;
+            font-size: 3.25rem;
+            text-align: center;
+        }
+        .sub-header {
+            font-family: 'Lora', serif;
+            font-weight: 700;
+            font-size: 0.7rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 2px solid #333;
+            border-bottom: 1px solid #333;
+            padding: 0.5rem 0;
+            margin-bottom: 1rem;
+        }
+        .article-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            text-align: center;
+        }
+        .article-body {
+            font-family: 'Lora', serif;
+            text-align: justify;
+            line-height: 1.7;
+            column-count: 2;
+            column-gap: 1.5rem;
+        }
+        .article-body p::first-letter {
+            font-size: 3em;
+            font-weight: bold;
+            float: left;
+            line-height: 1;
+            margin-right: 0.15em;
+            margin-top: 0.1em;
+            font-family: 'Playfair Display', serif;
+        }
+        .pull-quote {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.1rem;
+            text-align: center;
+            padding: 1rem;
+            border-top: 1px solid #888;
+            border-bottom: 1px solid #888;
+            column-span: all;
+        }
+        .soulvault-brand {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <div class="min-h-screen w-full flex justify-center items-center p-4">
+        <div class="newspaper-container p-6 rounded-sm">
+            <header class="mb-4">
+                <h1 class="masthead-title my-3">The Inner Compass</h1>
+                <div class="sub-header">
+                    <span>VOL. I, No. 1</span>
+                    <span>KUALA LUMPUR</span>
+                    <span>JUL 24, 2025</span>
+                </div>
+            </header>
+            <main class="flex-grow flex flex-col justify-around">
+                <article>
+                    <h2 class="article-title text-4xl mb-4">Growth</h2>
+                    <div class="article-body text-xs">
+                        <p>
+                            This week has been a profound journey of self-discovery and personal growth. Your reflections reveal a beautiful evolution in your relationship with authenticity and courage. You've shown remarkable honesty when discussing your fears, particularly around failure and taking risks. This vulnerability is actually a strength that's helping you grow. Your gratitude practice has deepened significantly. You're finding joy in small moments - from morning coffee to unexpected messages from friends. This shift toward mindfulness and appreciation is creating a more positive foundation for your daily experiences. The recurring theme of courage in your writing suggests you're at a pivotal moment.
+                        </p>
+                    </div>
+                </article>
+                <blockquote class="pull-quote">
+                    "This vulnerability is actually a strength that's helping you grow."
+                </blockquote>
+                <div class="pt-4 text-center border-t border-gray-400 border-opacity-50">
+                    <p class="soulvault-brand text-md">soulvault</p>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
